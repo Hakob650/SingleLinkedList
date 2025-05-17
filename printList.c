@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Struct.h"
-Node* search(Node *head,int val){
+void printList(Node *head){
         Node *tmp=head;
         while(tmp!=NULL){
-                if(tmp->value==val){
-                        return tmp;
-                }
+                printf("%d->",tmp->value);
                 tmp=tmp->next;
         }
-        return NULL;
 }
+
